@@ -29,7 +29,8 @@ class Indent:
         self.__output_string = basic_str
 
     def __add_to_output_string(self, string: str, indent: str = "") -> None:
-        self.__output_string += f"{indent * self.__indent_level}{string}\n"
+        self.__output_string += f"{indent}{string}\n"
+        return
 
     def set_indent_level(self, format_level: int) -> None:
         self.__indent_level = format_level
@@ -60,11 +61,10 @@ class Indent:
                 self.__add_to_output_string(curr_str, indent)
 
     def get_output(self) -> str:
-        return self.__output_string
+        return self.__output_string[:-1]
 
     def reset_output(self) -> None:
         self.__output_string = ""
-
 
     def replace_output(self, replacement: str) -> None:
         self.reset_output()
