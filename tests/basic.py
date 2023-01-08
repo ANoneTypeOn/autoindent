@@ -17,7 +17,7 @@
 
 import unittest
 
-from indent import Indent
+from autoindent import Indent
 
 indenter = Indent()
 
