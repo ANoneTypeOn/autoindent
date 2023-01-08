@@ -28,10 +28,10 @@ if __name__ == "__main__":
         url="https://github.com/AvesterHupper/StringIndent",
         author="AvesterHupper",
         classifiers=[
-            "Development Status :: 5 - Production/Stable",
+            "Development Status :: 5 - Production/Unstable",
             "Intended Audience :: Developers",
             "Natural Language :: English",
-            "License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)",
+            "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
             "Operating System :: OS Independent",
             "Programming Language :: Python",
             "Programming Language :: Python :: 3",

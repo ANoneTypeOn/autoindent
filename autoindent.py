@@ -17,7 +17,7 @@
 
 from typing import Iterable
 
-# TODO: добавить базовую настройку сепараторов, сделать более удобным
+# TODO: add basic separator setup and etc.
 class Indent:
     """Main class for auto indenting"""
     def __init__(self, basic_str: str = "", separator: str = "  ", basic_level: int = 0):
