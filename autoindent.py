@@ -28,6 +28,9 @@ class Indent:
         self.__indent_level = 0  # protection from accidental change of main values
         self.__output_string = basic_str
 
+    def __str__(self):
+        return self.__output_string[:-1]
+
     def __add_to_output_string(self, string: str, indent: str = "") -> None:
         self.__output_string += f"{indent}{string}\n"
         return

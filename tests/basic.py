@@ -37,5 +37,22 @@ class MyTestCase(unittest.TestCase):
             self.fail("Results don't matching")
 
 
+    def test_output_methods(self):
+        right = '  Who am I?\n    Nobody'
+
+        indenter.add("Who am I?", 1)
+        indenter.add("Nobody", 2)
+
+        if indenter.get_output() == right:
+            pass
+        else:
+            self.fail("get_output() does not matching")
+
+        if str(indenter) == right:
+            pass
+        else:
+            self.fail("str(Indent()) does not mathing")
+
+
 if __name__ == '__main__':
     unittest.main()
