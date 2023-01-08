@@ -20,6 +20,9 @@ from typing import Iterable
 # TODO: add basic separator setup and etc.
 class Indent:
     """Main class for auto indenting"""
+    def __str__(self):
+        return self.__output_string[:-1]
+
     def __init__(self, basic_str: str = "", separator: str = "  ", basic_level: int = 0):
         """"""
         self.separator = separator
@@ -27,9 +30,6 @@ class Indent:
 
         self.__indent_level = 0  # protection from accidental change of main values
         self.__output_string = basic_str
-
-    def __str__(self):
-        return self.__output_string[:-1]
 
     def __add_to_output_string(self, string: str, indent: str = "") -> None:
         self.__output_string += f"{indent}{string}\n"
