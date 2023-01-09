@@ -1,4 +1,4 @@
-# StrIndent
+# AutoIndent
 
 > Easy to use, mistakes protected lib to make indents in strings easily
 
@@ -22,4 +22,4 @@ pip install -U autoindent
 ```
 
 
-**StrIndent** is a easy to use, mistakes protected lib that makes your routine less complicated
+**AutoIndent** is a easy to use, mistakes protected lib that makes your routine less complicated
