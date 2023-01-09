@@ -2,6 +2,8 @@
 
 > Easy to use, mistakes protected lib to make indents in strings easily
 
+
+## Examples
 ``` python
 from autoindent import Indent
 
@@ -13,4 +15,11 @@ indent.add("Indent is necessary", 2)
 print(str(indent))
 ```
 
-**StrIndent** is a easy to use, mistakes protected lib that makes your routine formatting less complicated
+## Installation
+``` python
+python -m pip install -U pip
+pip install -U autoindent
+```
+
+
+**StrIndent** is a easy to use, mistakes protected lib that makes your routine less complicated
